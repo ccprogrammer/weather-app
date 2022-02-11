@@ -17,7 +17,7 @@ class WeatherPage extends StatelessWidget {
     var month = DateFormat.LLLL().format(DateTime.now());
     TextEditingController cityText = TextEditingController();
 
-    void search() {
+     handleSearchCity() {
       c.fetchWeather(cityText.text);
       FocusScopeNode currentFocus = FocusScope.of(context);
 
@@ -92,7 +92,7 @@ class WeatherPage extends StatelessWidget {
                 controller: cityText,
                 textInputAction: TextInputAction.done,
                 onEditingComplete: () {
-                  search();
+                  handleSearchCity();
                 },
                 style: TextStyle(color: Colors.white, fontSize: 24),
                 decoration: InputDecoration(
