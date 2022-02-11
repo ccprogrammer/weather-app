@@ -11,8 +11,8 @@ class WeatherPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final c = Get.put(WeatherController());
-    final double width = MediaQuery.of(context).size.width;
-    final double height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
     var day = DateFormat.d().format(DateTime.now());
     var month = DateFormat.LLLL().format(DateTime.now());
     TextEditingController cityText = TextEditingController();
