@@ -19,11 +19,6 @@ class WeatherPage extends StatelessWidget {
 
      handleSearchCity() {
       c.fetchWeather(cityText.text);
-<<<<<<< HEAD
- 
-=======
-      // /
->>>>>>> c25de985925f131ca4f39237146b4902cc1dc1ec
       FocusScopeNode currentFocus = FocusScope.of(context);
       if (!currentFocus.hasPrimaryFocus) {
         currentFocus.unfocus();
