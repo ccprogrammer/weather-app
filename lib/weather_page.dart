@@ -19,6 +19,7 @@ class WeatherPage extends StatelessWidget {
 
      handleSearchCity() {
       c.fetchWeather(cityText.text);
+      // Close keyboard after enter
       FocusScopeNode currentFocus = FocusScope.of(context);
       if (!currentFocus.hasPrimaryFocus) {
         currentFocus.unfocus();
