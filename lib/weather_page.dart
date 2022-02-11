@@ -21,6 +21,7 @@ class WeatherPage extends StatelessWidget {
       c.fetchWeather(cityText.text);
       FocusScopeNode currentFocus = FocusScope.of(context);
 // 
+// 
       if (!currentFocus.hasPrimaryFocus) {
         currentFocus.unfocus();
       }
