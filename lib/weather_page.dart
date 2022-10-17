@@ -195,6 +195,7 @@ class WeatherPage extends StatelessWidget {
                     margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
                     child: Text(
                       '${c.weather.value.description.toUpperCase()}',
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 22,
                         color: Colors.white,
